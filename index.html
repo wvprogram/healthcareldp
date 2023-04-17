@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css external files -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Roboto google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+    <title>WVHealth</title>
+</head>
+<body>
+    <!-- navigation bar -->
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <!-- logo -->
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="navbar_links-container">
+                    <!-- navigation links -->
+                    <div class="navbar_links">
+                        <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Doctors</a></li>
+                            <li><a href="#">Patients</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <!-- navigation button -->
+                    <div class="navbar_button">
+                        <button class="navbar_button-1">Get Started</button>
+                        <button class="navbar_button-2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero_section">
+            <div class="container">
+                <div class="hero_section-content">
+                    <div class="hero_text">
+                        <h1>We provide the best quality services</h1>
+                        <p>Welcome to WVHealth, where we are committed to delivering exceptional healthcare services to patients around the world.</p>
+                        <button>Make an Appointment</button>
+                        <!-- circle background svg -->
+                        <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="hero_text-svg">
+                            <!-- linear gradient color to fill svg -->
+                            <defs>
+                                <linearGradient id="gradient_text-svg" x1="0%" y1="0%" x2="50%" y2="0%">
+                                  <stop offset="0%"   stop-color="#f3f3f3"/>
+                                  <stop offset="100%" stop-color="#CEF5F8"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- path to draw circle for svg -->
+                            <path d="M 0, 100 C 0, 48 48, 0 100, 0 S 200, 48 200, 100 152, 200 100, 200 0, 152 0, 100" fill="#D3F5F7" transform="rotate(-2, 100, 100) translate(0 0)" class="hero_text-svg"></path>
+                        </svg>
+                    </div>
+                    <div class="hero_image">
+                        <img src="images/heading-doctor.png" alt="doctor">
+                        <!-- circle background svg -->
+                        <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="hero_image-svg">
+                            <!-- linear gradient color to fill svg -->
+                            <defs>
+                                <linearGradient id="gradient_image-svg" x1="0%" y1="0%" x2="50%" y2="0%">
+                                  <stop offset="0%"   stop-color="#BFEAFA"/>
+                                  <stop offset="100%" stop-color="#ADF3FB"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- path to draw circle for svg -->
+                            <path d="M 0, 100 C 0, 48 48, 0 100, 0 S 200, 48 200, 100 152, 200 100, 200 0, 152 0, 100" fill="#D3F5F7" transform="rotate(-2, 100, 100) translate(0 0)" class="hero_image-svg"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, unde. Omnis ea inventore eaque, eligendi ab laudantium ipsam odio quas, esse consequuntur accusamus sed libero mollitia maiores numquam voluptatum nihil.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+        </div>
+    </footer>
+</body>
+</html>

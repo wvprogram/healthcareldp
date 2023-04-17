@@ -1,0 +1,220 @@
+:root {
+    /* colors */
+    --text-color: #072615;
+    --blue: #169FED;
+    --white: #ffffff;
+    --background-color: #F5F9FC;
+    
+}
+
+
+/********** General Styling **********/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--background-color);
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin-inline: 1rem;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color);
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/********** Navigation Bar **********/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+}
+
+.logo img:hover {
+    cursor: pointer;
+}
+
+.navbar_links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navbar_links ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navbar_links a {
+    color: var(--text-color);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navbar_links a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--blue);
+    cursor: pointer;
+}
+
+.navbar_button {
+    position: relative;
+}
+
+.navbar_button .navbar_button-1 {
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1.2rem 2.5rem;
+    border-radius: 8px;
+    color: var(--blue);
+    text-transform: uppercase;
+    box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 2;
+}
+
+.navbar_button .navbar_button-1:hover {
+    cursor: pointer;
+    border: 1px solid var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.navbar_button .navbar_button-2 {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    position: absolute;
+    z-index: 0;
+    left: 1px;
+    padding: 1.7rem 5.6rem;
+    border-radius: 8px;
+    transform: rotate(177deg);
+}
+
+/* hovering on button 1 affects button 2 (sibling css effect) */
+.navbar_button-1:hover ~ .navbar_button-2 {
+    transform: rotate(0deg);
+    left: 0;
+}
+
+
+/********** Hero Section **********/
+.hero_section {
+    width: 100%;
+    background: linear-gradient(132deg, rgb(243, 243, 243) 0%, rgba(211,251,250,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;       /* hide svg overflow */
+}
+
+.hero_section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 3rem;
+    width: 50%;
+    gap: 3rem;
+    position: relative;
+}
+
+.hero_text h1 {
+    color: var(--text-color);
+    font-size: 3rem;
+    line-height: 4rem;
+    z-index: 2;
+}
+
+.hero_text p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 2rem;
+    z-index: 2;
+}
+
+.hero_text button {
+    width: 17rem;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1.2rem 2.5rem;
+    border-radius: 8px;
+    color: var(--white);
+    text-transform: uppercase;
+    box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.15);
+    z-index: 2;
+}
+
+.hero_text button:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.hero_text-svg {
+    position: absolute;
+    z-index: 0;
+    top: -45rem;
+    left: -25rem;
+    width: 70rem;
+    fill: url(#gradient_text-svg);
+}
+
+.hero_image {
+    position: relative;
+}
+
+.hero_image img {
+    width: 100%;
+    max-width: 40rem;
+    min-width: 25rem;
+    margin-top: 4rem;
+    z-index: 2;
+    position: relative;
+}
+
+.hero_image-svg {
+    position: absolute;
+    z-index: 0;
+    top: 20rem;
+    width: 70rem;
+    fill: url(#gradient_image-svg);
+}
