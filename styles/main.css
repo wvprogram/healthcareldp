@@ -39,6 +39,18 @@ body {
     align-items: center;
 }
 
+.blue_text-lg {
+    color: var(--blue);
+    text-decoration: underline;
+    text-underline-offset: 12px;
+}
+
+.blue_text-md {
+    color: var(--blue);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
 
 /********** Navigation Bar **********/
 .navbar {
@@ -123,8 +135,9 @@ body {
 
 /* hovering on button 1 affects button 2 (sibling css effect) */
 .navbar_button-1:hover ~ .navbar_button-2 {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     left: 0;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -135,6 +148,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
     overflow: hidden;       /* hide svg overflow */
 }
 
@@ -153,6 +167,14 @@ body {
     width: 50%;
     gap: 3rem;
     position: relative;
+}
+
+.hero_text h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    /* line-height: 2.5rem; */
+    z-index: 2;
+    text-transform: uppercase;
 }
 
 .hero_text h1 {
@@ -187,6 +209,7 @@ body {
     cursor: pointer;
     background-color: var(--white);
     color: var(--blue);
+    transition: all 0.3s ease-in-out;
 }
 
 .hero_text-svg {
@@ -218,3 +241,40 @@ body {
     width: 70rem;
     fill: url(#gradient_image-svg);
 }
+
+
+/********** Features Title **********/
+.features_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.features_title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features_title-details {
+    width: 70%;
+    text-align: center;
+}
+
+.features_title-details h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-size: 2rem;
+    /* line-height: 3rem; */
+}
+
+.features_title-details p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+
+/********** Features **********/
