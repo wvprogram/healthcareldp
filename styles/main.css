@@ -3,6 +3,14 @@
     --text-color: #072615;
     --blue: #169FED;
     --white: #ffffff;
+    --red: #F25A3C;
+    --light-red: #FEEFEB;
+    --brown: #CC7926;
+    --light-brown: #FAF2E9;
+    --green: #739D1E;
+    --light-green: #F1F5E9;
+    --cyan: #20BBA1;
+    --light-cyan: #E9F8F6;
     --background-color: #F5F9FC;
     
 }
@@ -20,7 +28,7 @@ body {
 .container {
     max-width: 1400px;
     width: 100%;
-    margin-inline: 1rem;
+    padding-inline: 1rem;
 }
 
 .header {
@@ -148,7 +156,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
     overflow: hidden;       /* hide svg overflow */
 }
 
@@ -278,3 +286,93 @@ body {
 
 
 /********** Features **********/
+.features {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.features_display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 305px);
+    gap: 3rem;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.15);
+}
+
+.display:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.display i {
+    font-size: 4rem;
+    padding: 5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.display h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.display p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.display_red {
+    background: var(--light-red);
+}
+
+.icon_red {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.display_brown {
+    background: var(--light-brown);
+}
+
+.icon_brown {
+    background-color: var(--brown);
+    color: var(--white);
+}
+
+.display_green {
+    background: var(--light-green);
+}
+
+.icon_green {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.display_cyan {
+    background: var(--light-cyan);
+}
+
+.icon_cyan {
+    background-color: var(--cyan);
+    color: var(--white);
+}
