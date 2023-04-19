@@ -2,6 +2,7 @@
     /* colors */
     --text-color: #072615;
     --blue: #169FED;
+    --light-blue: #DEF2FB;
     --white: #ffffff;
     --red: #F25A3C;
     --light-red: #FEEFEB;
@@ -471,4 +472,103 @@ body {
     transform: rotate(180deg);
     left: 0;
     transition: all 0.3s ease-in-out;
+}
+
+
+/********** Extra Features **********/
+.extra_features {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.extra_feature {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 420px);
+    gap: 3rem;
+}
+
+.extra_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.15);
+}
+
+.extra_header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.extra_header img {
+    width: 4.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+.extra_header h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.extra_detail {
+    display: flex;
+}
+
+.extra_detail p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.extra_detail i {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.extra_detail i:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.ambulance {
+    background-color: var(--light-blue);
+}
+
+.appointment {
+    background-color: var(--light-red);
+}
+
+.find_doctor {
+    background-color: var(--light-brown);
+}
+
+.extra_details-middle {
+    position: relative;
+}
+
+.details_middle {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+}
+
+.middle_blue-bg {
+    background: var(--blue);
+    border-radius: 12px;
+    position: absolute;
+    top: 1px;
+    left: 8px;
+    width: 26.3rem;
+    height: 13.1rem;
+    transform: rotate(177deg);
+    z-index: 0;
 }
