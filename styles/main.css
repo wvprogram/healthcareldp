@@ -1,8 +1,9 @@
 :root {
     /* colors */
     --text-color: #072615;
-    --blue: #169FED;
-    --light-blue: #DEF2FB;
+    --blue: #169fed;
+    --light-blue: #BCF5FC;
+    --lighter-blue: #DEF2FB;
     --white: #ffffff;
     --red: #F25A3C;
     --light-red: #FEEFEB;
@@ -12,6 +13,7 @@
     --light-green: #F1F5E9;
     --cyan: #20BBA1;
     --light-cyan: #E9F8F6;
+    --gold: #EBAC45;
     --background-color: #F5F9FC;
     
 }
@@ -540,7 +542,7 @@ body {
 }
 
 .ambulance {
-    background-color: var(--light-blue);
+    background-color: var(--lighter-blue);
 }
 
 .appointment {
@@ -571,4 +573,141 @@ body {
     height: 13.1rem;
     transform: rotate(177deg);
     z-index: 0;
+}
+
+
+/********** Schedule **********/
+.schedule {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12rem;
+}
+
+.schedule_section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.schedule_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+.schedule_details h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.schedule_details-specific {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.schedule_details-specific i {
+    transform: rotate(90deg);
+    font-size: 1.5rem;
+    color: var(--red);
+}
+
+.schedule_details-specific p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.schedule_details p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.schedule_details-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.schedule_details-features h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.schedule_details-features ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.schedule_details-features ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.schedule_details-features ul li i {
+    font-size: 1.5rem;
+    color: var(--gold);
+}
+
+.schedule_details-features ul li p {
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.schedule_images {
+    position: relative;
+}
+
+.doctor-patient-two {
+    border-radius: 12px;
+}
+
+.appointment-img {
+    position: absolute;
+    border-radius: 12px;
+    left: 9rem;
+    bottom: -6rem;
+    box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.15);
+}
+
+
+/********** Patients **********/
+.patients {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patient {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.patient h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.patient_comment {
+    background: var(--light-blue);
+    padding: 40px 200px;
 }
