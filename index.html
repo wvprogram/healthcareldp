@@ -232,12 +232,12 @@
                     <h2>Patient Testimonial</h2>
                     <div class="patient_comment">
                         <div class="patient_comment-image">
-                            <img src="https://randomuser.me/api/portraits/men/66.jpg" alt="male patient">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="male patient">
-                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="female patient">
-                            <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="female patient">
-                            <img src="https://randomuser.me/api/portraits/women/71.jpg" alt="female patient">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800">
+                            <img src="https://randomuser.me/api/portraits/men/66.jpg" alt="male patient" class="patient_icon icon_one">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="male patient" class="patient_icon icon_two">
+                            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="female patient" class="patient_icon-unique">
+                            <img src="https://randomuser.me/api/portraits/women/64.jpg" alt="female patient" class="patient_icon icon_three">
+                            <img src="https://randomuser.me/api/portraits/women/71.jpg" alt="female patient" class="patient_icon icon_four">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 800" class="patient_comment-svg">
                                 <g stroke-width="19" stroke="#169fed" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="matrix(0.34202014332566816,-0.9396926207859085,0.9396926207859085,0.34202014332566816,-107.68510564463077,651.0689909840962)">
                                     <path d="M271 271Q492 380 529 529 " marker-end="url(#SvgjsMarker1597)"></path>
                                 </g>
@@ -247,9 +247,35 @@
                             </svg>
                         </div>
                         <div class="patient_comment-detail">
-
+                            <p>
+                                <i class="fa-solid fa-quote-left"></i>
+                                Using <span class="blue_text-md">WVHealth's website</span> was a game-changer for me! Booking appointments, accessing medical records, and receiving timely updates has never been easier. Thank you for making healthcare so convenient and accessible.
+                                <i class="fa-solid fa-quote-right"></i>
+                            </p>
+                            <h3>Jane Doe</h3>
+                            <p>Patient</p>
                         </div>
+                        <!-- circle background svg -->
+                        <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="patient_text-svg">
+                            <!-- linear gradient color to fill svg -->
+                            <defs>
+                                <linearGradient id="patient_text-svg" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%"   stop-color="#CEF5F8"/>
+                                <stop offset="100%" stop-color="#f3f3f3"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- path to draw circle for svg -->
+                            <path d="M 0, 100 C 0, 48 48, 0 100, 0 S 200, 48 200, 100 152, 200 100, 200 0, 152 0, 100" fill="#D3F5F7" transform="rotate(-2, 100, 100) translate(0 0)" class="patient_text-svg"></path>
+                        </svg>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container">
+                <div class="news_details">
+                    
                 </div>
             </div>
         </section>
