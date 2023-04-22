@@ -691,6 +691,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
 }
 
 .patient {
@@ -708,6 +709,119 @@ body {
 }
 
 .patient_comment {
-    background: var(--light-blue);
-    padding: 40px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem 1rem 1rem;
+    gap: 1rem;
+    background: linear-gradient(132deg, rgba(211,251,250,1) 0%, rgba(243,243,243,1) 100%);
+    border-radius: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.patient_comment-image {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css to make background-image visible and opacity changed without effecting the parent and elements */
+.patient_comment-image::before {
+    content: "";
+    background-image: url("../images/patient-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.patient_comment-image .patient_icon-unique {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    margin: 12rem 0;
+}
+
+.patient_comment-image .patient_icon {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patient_comment-image .icon_one {
+    top: 10%;
+    left: 40%;
+}
+
+.patient_comment-image .icon_two {
+    top: 45%;
+    left: 20%;
+}
+
+.patient_comment-image .icon_three {
+    bottom: 10%;
+    left: 35%;
+}
+
+.patient_comment-image .icon_four {
+    bottom: 15%;
+    left: 60%;
+}
+
+.patient_comment-svg {
+    position: absolute;
+    width: 25rem;
+    right: -1rem;
+    top: -3rem;
+    transform: rotate(10deg);
+}
+
+.patient_comment-detail {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    z-index: 2;
+}
+
+.patient_comment-detail p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.patient_comment-detail i {
+    font-size: 2rem;
+    opacity: 0.3;
+}
+
+.patient_comment-detail h3 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+/* svg parent element is set to patient-comment class */
+.patient_text-svg {
+    position: absolute;
+    z-index: 0;
+    top: -1rem;
+    right: -10rem;
+    width: 50rem;
+    fill: url(#patient_text-svg);
 }
