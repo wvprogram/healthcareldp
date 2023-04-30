@@ -1143,6 +1143,12 @@ body {
     font-size: 1.5rem;
 }
 
+.newsletter_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .newsletter_button input {
     background-color: var(--grey);
     border: none;
