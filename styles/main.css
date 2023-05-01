@@ -1017,7 +1017,7 @@ body {
 /********** Footer **********/
 .footer_section {
     width: 100%;
-    background-image: url(../images/footer-bg.jpg);
+    background-image: url('/images/footer-bg.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
