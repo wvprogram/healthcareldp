@@ -31,6 +31,7 @@ html {
 
 body {
     background: var(--background-color);
+    overflow-x: hidden;
 }
 
 .container {
@@ -178,6 +179,10 @@ body {
 
     .hamburger-navbar i {
         font-size: 2rem;
+    }
+
+    .hamburger-navbar i:hover {
+        cursor: pointer;
     }
 
     .navbar_links-container {
