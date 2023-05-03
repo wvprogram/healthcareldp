@@ -328,6 +328,25 @@ body {
     }
 }
 
+@media screen and (max-width: 530px) {
+    .hero_text h1 {
+        width: 100%;
+    }
+
+    .hero_text p {
+        width: 100%;
+    }
+
+    .hero_image img {
+        min-width: 20rem;
+    }
+
+    .hero_image-svg {
+        top: 5rem;
+        left: -5rem;
+    }
+}
+
 
 /********** Features Title **********/
 .features_title {
@@ -362,6 +381,11 @@ body {
     line-height: 2rem;
 }
 
+@media screen and (max-width: 530px) {
+    .features_title-details {
+        width: 100%;
+    }
+}
 
 /********** Features **********/
 .features {
@@ -376,6 +400,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, 305px);
     gap: 3rem;
+    justify-content: center;
 }
 
 .display {
@@ -455,6 +480,12 @@ body {
     color: var(--white);
 }
 
+@media screen and (max-width: 530px) {
+    .features {
+        margin-bottom: 10rem;
+    }
+}
+
 
 /********** Contact Us **********/
 .contact {
@@ -466,7 +497,8 @@ body {
 }
 
 .contact_section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
@@ -474,18 +506,24 @@ body {
 
 .contact_img {
     position: relative;
+    width: 100%;
 }
 
-.doctor-patient-one {
+.contact_img .doctor-patient-one {
     border-radius: 12px;
+    width: auto;
 }
 
-.doctor-rating {
+.contact_img .doctor-rating {
     position: absolute;
     border-radius: 12px;
     left: 8rem;
     bottom: -6rem;
     box-shadow: var(--boxshadow);
+}
+
+.contact_details {
+    width: 100%;
 }
 
 .contact_details h2 {
@@ -549,6 +587,98 @@ body {
     transform: rotate(180deg);
     left: 0;
     transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1250px) {
+    .contact {
+        margin-bottom: 4rem;
+    }
+
+    .contact_section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .contact_img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .contact_img .doctor-rating {
+        left: auto;
+        top: auto;
+    }
+
+    .contact_details {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .contact_img {
+        margin-bottom: 3rem;
+    }
+
+    .contact_img .doctor-patient-one {
+        width: 90%;
+    }
+
+    .contact_img .doctor-rating {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 677px) {
+    .contact {
+        margin-bottom: 10rem;
+    }
+    
+    .contact_img {
+        margin-bottom: 4rem;
+    }
+
+    .contact_img .doctor-patient-one {
+        width: 90%;
+    }
+
+    .contact_img .doctor-rating {
+        width: 50%;
+        top: calc(100% - 4rem);
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .contact_section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact_img {
+        margin-bottom: 4rem;
+    }
+
+    .contact_img .doctor-patient-one {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .contact_img {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact_img .doctor-rating {
+        width: 50%;
+        top: calc(100% - 3rem);
+    }
 }
 
 
@@ -648,6 +778,27 @@ body {
     height: 13.1rem;
     transform: rotate(177deg);
     z-index: 0;
+}
+
+@media screen and (max-width: 1387px) {
+    .extra_feature {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .extra_feature {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .extra_details {
+        width: 100%;
+    }
+
+    .middle_blue-bg {
+        width: 100%;
+    }
 }
 
 
