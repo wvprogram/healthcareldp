@@ -898,16 +898,73 @@ body {
     position: relative;
 }
 
-.doctor-patient-two {
+.schedule_images .doctor-patient-two {
     border-radius: 12px;
 }
 
-.appointment-img {
+.schedule_images .appointment-img {
     position: absolute;
     border-radius: 12px;
     left: 9rem;
     bottom: -6rem;
     box-shadow: var(--boxshadow);
+}
+
+@media screen and (max-width: 1250px) {
+    .schedule_section {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .schedule_details {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .schedule_images {
+        width: 100%;
+    }
+
+    .schedule_images .doctor-patient-two {
+        width: 100%;
+    }
+
+    .schedule_images .appointment-img {
+        left: calc(auto);
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .schedule_images .appointment-img {
+        top: calc(100% - 4rem);
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .schedule_images .appointment-img {
+        left: calc(100% - 22rem);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .schedule_images .appointment-img {
+        left: calc(100% - 19rem);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .schedule_images .appointment-img {
+        left: calc(100% - 17rem);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .schedule_images .appointment-img {
+        left: calc(100% - 15rem);
+    }
 }
 
 
@@ -1050,6 +1107,74 @@ body {
     right: -10rem;
     width: 50rem;
     fill: url(#patient_text-svg);
+}
+
+@media screen and (max-width: 1140px) {
+    .patient_comment-image {
+        z-index: 2;
+    }
+
+    .patient_comment-image .icon_two {
+        left: 10%;
+    }
+
+    .patient_comment-svg {
+        right: -4rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .patient_comment-image .patient_icon-unique {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .patient_comment-image .icon_one {
+        display: none;
+    }
+
+    .patient_comment-image .icon_two {
+        display: none;
+    }
+
+    .patient_comment-image .icon_three {
+        display: none;
+    }
+
+    .patient_comment-image .icon_four {
+        display: none;
+    }
+
+    .patient_comment-svg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .patient_comment {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+
+    .patient_comment-image {
+        width: 100%;
+    }
+
+    .patient_comment-detail {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .patient_comment {
+        padding-inline: 0;
+    }
+
+    .patient_comment-detail {
+        width: 100%;
+        padding-inline: 1rem;
+    }
 }
 
 
@@ -1227,6 +1352,99 @@ body {
     margin-right: 2rem;
 }
 
+@media screen and (max-width: 1250px) {
+    .news_section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newsletter .newsletter_icons {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .newsletter {
+        width: 80%;
+    }
+
+    .newsletter .newsletter_icons {
+        width: 70%;
+    }
+    
+    .news_links {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .news_links {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .newsletter {
+        width: 100%;
+    }
+
+    .newsletter .newsletter_icons {
+        width: 90%;
+    }
+
+    .news_links {
+        width: 100%;
+    }
+
+    .latest_news-article {
+        justify-content: start;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .newsletter .newsletter_img-header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .latest_news-article {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .coming_soon img:first-child {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .coming_soon {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .coming_soon img:first-child {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .coming_soon img:first-child {
+        margin-right: 0;
+    }
+}
+
 
 /********** Footer **********/
 .footer_section {
@@ -1393,4 +1611,12 @@ body {
 
 .copyright {
     color: var(--white);
+}
+
+@media screen and (max-width: 1200px) {
+    .footer_section-content {
+        flex-wrap: wrap;
+        gap: 4rem;
+        justify-content: space-evenly;
+    }
 }
